@@ -1,0 +1,118 @@
+:root {
+    --prime-color: #EEEEEE;
+    --sec-color: #111111;
+    --acc-one-color:#AAAAAA;
+    --acc-two-color:#777777;
+    --acc-thr-color:#444444;
+}
+
+* {
+    margin: 0px;
+    display: 0px;
+    box-sizing:border-box;
+}
+
+body{
+    color: var(--sec-color);
+    line-height: 1.4;
+    background-color: var(--prime-color);
+    font-family: "Open Sans";
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+}
+
+header, main, footer{
+    width: 100%;
+    max-width: 60rem;
+
+    padding: 0.5rem;
+    border: solid 3px var(--acc-thr-color);
+    border-radius: 5px;
+    margin: 0.5rem;
+}
+
+#course-title, header, footer{
+    grid-column: 1/ 12;
+}
+
+header, footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#course-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+nav a{
+    padding: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: var(--acc-thr-color);
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+main h1{
+    grid-column: 1/12;
+    text-align: center;
+}
+
+.card:nth-child(even){
+    grid-column: 1/9;
+}
+
+.card:nth-child(odd){
+    grid-column: 9/12;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: solid 1px var(--acc-one-color);
+    border-radius: 3px;
+    margin: 0.25rem;
+    padding: 0.25rem;
+}
+.card div *{
+    padding: 0.5rem;
+}
+
+#person-img{
+    float: left;
+}
+#person-txt{
+    clear: right;
+}
+#mosh-img{
+    float: right;
+}
+#mosh-txt{
+    clear: left;
+}
+ul{
+   list-style: none;
+   padding: 0;
+   margin: 0; 
+}
+
+header span{
+    display: block;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: var(--acc-thr-color);
+}
