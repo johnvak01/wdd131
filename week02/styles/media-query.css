@@ -1,0 +1,39 @@
+:root{
+    --base-cor:     #00AAFF;
+    --sec-cor:      #EEEEEE;
+    --ter-cor:      #222222;
+    --acc-1-cor:    #AA00FF;
+    --acc-2-cor:    #FFAA00;
+    --acc-3-cor:    #00FFAA;
+    --acc-4-cor:    #FF00AA;
+    --acc-5-cor:    #AAFF00;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer{
+    max-width: 640px;
+    margin: 1rem auto;
+    border: solid 1px var(--acc-3-cor);
+    border-radius: 3px;
+    padding: 0.25rem;
+
+    background-color: var(--base-cor);
+    color:var(--sec-cor);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+section{
+    padding: 0.25rem;
+    background-color: var(--sec-cor);
+    color: var(--ter-cor)
+}
