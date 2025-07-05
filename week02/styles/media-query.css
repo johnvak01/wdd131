@@ -37,3 +37,9 @@ section{
     background-color: var(--sec-cor);
     color: var(--ter-cor)
 }
+
+
+footer{
+    background-color: var(--sec-cor);
+    color: var(--ter-cor);
+}
