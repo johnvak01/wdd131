@@ -1,12 +1,12 @@
 :root{
     --base-cor:     #EEEEEE;
     --sec-cor:      #222222;
-    --acc-1-cor:    #9900FF;
-    --acc-2-cor:    #FF9900;
-    --acc-3-cor:    #00FF99;
-    --acc-4-cor:    #FF0099;
-    --acc-5-cor:    #99FF00;
-    --acc-6-cor:    #0099FF;
+    --acc-1-cor:    #0088EE;
+    --acc-2-cor:    #EE8800;
+    --acc-3-cor:    #00EE88;
+    --acc-4-cor:    #EE0088;
+    --acc-5-cor:    #88EE00;
+    --acc-6-cor:    #8800EE;
 }
 *{
     margin: 0;
@@ -73,6 +73,7 @@ nav{
     min-width: 500px;
     text-overflow: clip;
 }
+
 #menu.open::after{
     content: "❌";
 }
@@ -124,6 +125,7 @@ figure{
 .hidden{
     display: none;
 }
+
 .visible{
     display: block;
 }
