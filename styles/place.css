@@ -110,10 +110,10 @@ td{
         height: auto;
     }
     #weather-symbol{
-        display:hidden;
+        display:none;
     }
-    #weather-symbol::after{
-        content:"⛅";
+    #weather-title::after{
+        content:" ⛅";
         font-size: xx-large;
         margin: 0px;
     }
