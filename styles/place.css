@@ -28,10 +28,11 @@ body{
     align-items: center;
 
     background-color: var(--welsh-green);
+    font-family: "Open Sans";
 }
 
 main, header, footer{
-    max-width: 360px;
+    max-width: 720px;
     width: 100%;
     text-align: center;
 }
@@ -41,6 +42,7 @@ main *{
     margin: 0.25rem;
     background-color: var(--welsh-white);
     color: var(--sec-cor);
+    position: relative;
 }
 
 header, footer{
@@ -67,15 +69,22 @@ section{
     padding: 0px;
 }
 
-source{
+source,#weather-symbol{
     margin: 0px;
     padding: 0px;
 }
 picture,img{
     margin: 0.25rem 0px;
     padding: 0px;
+    width: 100%;
+    height: auto;
 }
 
+#weather-symbol{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
 th,td{
     width: 50%;
 }
@@ -85,6 +94,7 @@ th{
 td{
     text-align: left;
 }
+
 
 /* Large Formatting */
 
@@ -98,5 +108,25 @@ td{
     picture, img{
         width: 100%;
         height: auto;
+    }
+    #weather-symbol{
+        display:hidden;
+    }
+    #weather-symbol::after{
+        content:"⛅";
+        font-size: xx-large;
+        margin: 0px;
+    }
+    .info-card:nth-child(even){
+        position:absolute;
+        left: 5px;
+        top: 5rem;
+        width:fit-content;
+        height:fit-content;
+    }
+    .info-card:nth-child(odd){
+        position:absolute;
+        right: 5px;
+        bottom: 5rem;
     }
 }
