@@ -1,12 +1,12 @@
 :root{
     --base-cor:     #EEEEEE;
     --sec-cor:      #222222;
-    --acc-1-cor:    #0088EE;
-    --acc-2-cor:    #EE8800;
-    --acc-3-cor:    #00EE88;
-    --acc-4-cor:    #EE0088;
-    --acc-5-cor:    #88EE00;
-    --acc-6-cor:    #8800EE;
+    --acc-1-cor:    #0055EE;
+    --acc-2-cor:    #EE5500;
+    --acc-3-cor:    #00EE55;
+    --acc-4-cor:    #EE0055;
+    --acc-5-cor:    #55EE00;
+    --acc-6-cor:    #5500EE;
 }
 *{
     margin: 0;
