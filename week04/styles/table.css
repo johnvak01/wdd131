@@ -1,0 +1,41 @@
+:root{
+    --base-cor:     #EEEEEE;
+    --sec-cor:      #222222;
+    --acc-1-cor:    #0055EE;
+    --acc-2-cor:    #EE5500;
+    --acc-3-cor:    #00EE55;
+    --acc-4-cor:    #EE0055;
+    --acc-5-cor:    #55EE00;
+    --acc-6-cor:    #5500EE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* main text */
+table{
+    width: fit-content;
+    min-width: 560px;
+}
+
+
+thead{
+    text-align: center;
+    background-color: var(--sec-cor);
+    color: var(--base-cor);
+}
+
+thead th{
+    background-color: var(--acc-1-cor);
+}
+
+tbody{
+    background-color: var(--base-cor);
+    color: var(--sec-cor);
+}
+
+tbody tr:nth-child(even){
+    background-color: var(--acc-3-cor);
+}
