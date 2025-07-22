@@ -1,0 +1,42 @@
+:root{
+    --base-cor:     #EEEEEE;
+    --sec-cor:      #222222;
+    --acc-1-cor:    #0055EE;
+    --acc-2-cor:    #EE5500;
+    --acc-3-cor:    #00EE55;
+    --acc-4-cor:    #EE0055;
+    --acc-5-cor:    #55EE00;
+    --acc-6-cor:    #5500EE;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1{
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    animation: fade 15s;
+    background-color: #000000;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
