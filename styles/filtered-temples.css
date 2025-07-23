@@ -120,10 +120,12 @@ figure{
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 img{
-    aspect-ratio: 16/9;
+    width: 260px;
+    height: 145px;
 }
 .data{
     height: 5rem;
