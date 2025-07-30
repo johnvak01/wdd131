@@ -1,0 +1,54 @@
+:root{
+    --light-text: #ffffff;
+    --dark-text: #000000;
+    --prime-blue: #263037;
+    --accent-blue: #7290a5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+/* Primary Formatting */
+
+body{
+    background-color: var(--prime-blue);
+    color: var(--light-text);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+    padding: 0.25rem auto;
+    margin: 0.25rem auto;
+}
+
+main{
+    width: 100%;
+    max-width: 20rem;
+    padding: 0.25rem;
+    margin: auto;
+
+}
+
+section{
+    border-radius: 2px;
+    border: solid 1px var(--accent-blue);
+    margin: 0.25rem auto;
+    padding: 0.25rem;
+    width: 100%;
+}
+
+li{
+    padding-left: 0.25rem;
+    list-style-position: inside;
+}
+li > ul{
+    padding-left:0.5rem;
+}
