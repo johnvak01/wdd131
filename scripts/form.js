@@ -50,5 +50,5 @@ function set_products(selected_products){
     selection_list.appendChild(product_card);
     }
 }
+
 set_products(products);
-// 
