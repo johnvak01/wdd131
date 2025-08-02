@@ -8,11 +8,11 @@ lastmodified_p.innerHTML = document.lastModified;
 
 // counter control
 const counter = document.getElementById("form_result_counter");
-let storage = JSON.parse(localStorage.getItem("results_counter")) || 1;
+let storage = JSON.parse(localStorage.getItem("results_counter")) || 0;
 
-counter.innerHTML = storage++;
+counter.innerHTML = storage+1;
 
-localStorage.setItem("results_counter", storage);
+localStorage.setItem("results_counter", storage+1);
 
 
 
