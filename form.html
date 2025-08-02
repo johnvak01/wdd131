@@ -21,9 +21,10 @@
     </header>
     <main>
         <h2>Form</h2>
+        
         <form method="get" action="review.html">
             <div class="form_section">
-                <label><span class="form_title">Product Name</span>
+                <label><span class="form_title">Product Name<span class="required_asterisk">*</span></span>
                     <select name="form_rating" id="form_product" required>
                         <option disabled selected value="">Select a Product ...</option>
                         <option value="cat">Cat Food</option>
@@ -35,7 +36,7 @@
                     </select></label>
             </div>
             <div class="form_section radio-list">
-                <span class="form_title">Overall Rating</span>
+                <span class="form_title">Overall Rating<span class="required_asterisk">*</span></span>
                 <label>&star;
                     <input type="radio" name="form_rating" id="form_1_star" value="1" required></label>
                 <label>&star;&star;
@@ -48,7 +49,7 @@
                     <input type="radio" name="form_rating" id="form_5_star" value="5" required></label>
             </div>
             <div class="form_section">
-                <label><span class="form_title">Date of Acquisition</span>
+                <label><span class="form_title">Date of Acquisition<span class="required_asterisk">*</span></span>
                     <input type="date" name="form_date" id="form_date" required></label>
             </div>
             <div class="form_section radio-list">
@@ -78,6 +79,8 @@
             <!-- other -->
             <input type="submit" value="Post Review">
         </form>
+    
+        <p><span class="required_asterisk">*</span> Indicates a required response.</p>
     </main>
     <footer>
         <p><span id="currentyear"></span> | J Austin Hutchinson | UT, USA</p>

@@ -137,3 +137,7 @@ label{
 .form_result_counter{
     text-align: center;
 }
+
+.required_asterisk{
+    color: red;
+}
