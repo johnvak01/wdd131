@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="John Austin Hutchinson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Austin Hutchinson WDD131 Assignment Product Review Form">
+    <title>Product Review Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/form.js" defer> </script>
+</head>
+
+<body>
+    <header>
+        <h1>Form Assignment</h1>
+    </header>
+    <main>
+        <h2>Form</h2>
+        <form method="get" action="review.html">
+            <div class="form_section">
+                <label><span class="form_title">Product Name</span>
+                    <select name="form_rating" id="form_product" required>
+                        <option disabled selected value="">Select a Product ...</option>
+                        <option value="cat">Cat Food</option>
+                        <option value="dog">Dog Treats</option>
+                        <option value="fish">Fish Flakes</option>
+                        <option value="bachelor">Bachelor Chow</option>
+                        <option value="corpse">Corpse Starch</option>
+
+                    </select></label>
+            </div>
+            <div class="form_section radio-list">
+                <span class="form_title">Overall Rating</span>
+                <label><div>&star;</div>
+                    <input type="radio" name="form_rating" id="form_1_star" value="1" required></label>
+                <label><div>&star;&star;</div>
+                    <input type="radio" name="form_rating" id="form_2_star" value="2" required></label>
+                <label><div>&star;&star;&star;</div>
+                    <input type="radio" name="form_rating" id="form_3_star" value="3" required></label>
+                <label><div>&star;&star;&star;&star;</div>
+                    <input type="radio" name="form_rating" id="form_4_star" value="4" required></label>
+                <label><div>&star;&star;&star;&star;&star;</div>
+                    <input type="radio" name="form_rating" id="form_5_star" value="5" required></label>
+            </div>
+            <div class="form_section">
+                <label><span class="form_title">Date of Acquisition</span>
+                    <input type="date" name="form_date" id="form_date" required></label>
+            </div>
+            <div class="form_section radio-list">
+                <span class="form_title">What features of the product did you find useful?</span>
+                <label><div>Durability</div>
+                    <input type="checkbox" name="form_durability" id="form_durability"
+                        value="durability"></label>
+                <label><div>Ease of Use</div><input type="checkbox" name="form_ease" id="form_ease" value="ease"></label>
+                <label><div>Performance</div><input type="checkbox" name="form_performance" id="form_performance" value="performance"></label>
+                <label><div>Design</div><input type="checkbox" name="form_design" id="form_design" value="design"></label>
+                <label><div>Value for Money</div><input type="checkbox" name="form_value" id="form_value" value="value"></label>
+            </div>
+            <div class="form_section">
+                <label><span class="form_title">Written Review</span>
+                    <textarea id="form_free" name="form_free"></textarea>
+                </label>
+            </div>
+            <div class="form_section">
+                <label><span class="form_title">Your Name</span>
+                    <input type="text" name="form_name" id="form_name"></label>
+            </div>
+            <!-- Radio -->
+
+            <!-- Other -->
+            <!-- Useful Features -->
+
+            <!-- other -->
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> | J Austin Hutchinson | UT, USA</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+
+</html>
