@@ -1,19 +1,20 @@
-:root{
+:root {
     --light-text: #ffffff;
     --dark-text: #000000;
     --prime-blue: #263037;
     --accent-blue: #7290a5;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Open Sans";
 }
+
 /* Primary Formatting */
 
-body{
+body {
     background-color: var(--prime-blue);
     color: var(--light-text);
     width: 100%;
@@ -23,13 +24,13 @@ body{
     align-items: center;
 }
 
-header{
+header {
     text-align: center;
     padding: 0.25rem;
     margin: 0.25rem auto;
 }
 
-main{
+main {
     width: 100%;
     max-width: 20rem;
     padding: 0.25rem;
@@ -37,7 +38,7 @@ main{
 
 }
 
-section{
+section {
     border-radius: 2px;
     border: solid 1px var(--accent-blue);
     margin: 0.25rem auto;
@@ -45,10 +46,77 @@ section{
     width: 100%;
 }
 
-li{
+li {
     padding-left: 0.25rem;
     list-style-position: inside;
 }
-li > ul{
-    padding-left:0.5rem;
+
+
+ul > ul > li{
+    margin-left: 0.75rem;
+}
+
+ul > ul > ul > li{
+    margin-left: 1.25rem;
+}
+
+/* Navigation Bar and button Formatting */
+#menu{
+    position: fixed;
+    top: 1rem;
+    right: 0.25rem;
+    text-align: right;
+    width: fit-content;
+}
+#menu::after{
+    content:"☰";
+    font-size: larger;
+    height: 100%;
+    line-height: 100%;
+    border: solid 1px var(--base-cor);
+    margin: 0.25rem;
+    padding: 0.5rem;
+    text-align: right;
+    width: 5rem;
+    text-overflow: clip;
+}
+#menu:hover{
+    border: 1px solid var(--accent-blue);
+}
+
+#menu.open::after{
+    content: "❌";
+}
+
+.visible{
+    display: block;
+}
+
+nav{
+    display: none;
+}
+a {
+    color: var(--light-text);
+    text-decoration: none;
+    min-width: 11rem;
+    font-weight: 700;
+}
+
+
+/* a:visited{
+    color: var(--accent-blue);
+} */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Planet Section Formatting */
+.planet {
+    float: right;
+    width: 11rem;
+    height: 11rem;
+}
+
+.planet-card {
+    overflow: auto;
 }
