@@ -1,0 +1,1 @@
+console.log("chargen script is running");
