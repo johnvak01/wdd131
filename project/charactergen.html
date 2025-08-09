@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +24,7 @@
 <body>
     <header>
         <h1>Gaius Invictus</h1>
-        <h2>Index Page</h2>
+        <h2>Character Generator</h2>
         <div id="menu" class=""></div>
         <nav>
             <a href="index.html" id="toindex">Home Page</a>
@@ -35,9 +34,26 @@
     </header>
     <main>
         <section class="planet-card">
-            <img src="images/planet.png" class="planet" loading="lazy">
-            <h2>The Pitch</h2>
-            <p></p>
+            <h2>Generate a Character</h2>
+            <form method="get">
+                <legend>Character Details</legend>
+                <!-- Fields -->
+                <label>Name<span class="required_asterisk">*</span><input type="text" name="name" placeholder="John" required></label>
+                <label>Epithet<span class="required_asterisk">*</span><input type="text" name="epithet" placeholder="Red" required></label>
+                <label>Home Planet<span class="required_asterisk">*</span><input type="text" name="planet" placeholder="Vitebsk" required></label>
+                <label>Class<span class="required_asterisk">*</span><input type="text" name="class" placeholder="Marine" required></label>
+                <label>Motivation<span class="required_asterisk">*</span><input type="text" name="motivation" placeholder="Hunger" required></label>
+
+                <!-- buttons -->
+                <button type="submit" id="button_save">Save Character</button>
+                <input type="button" name="randomize" value="Randomize Character" id="button_rand"></input>
+            </form>
+        </section>
+        <section>
+            <h2>Saved Characters</h2>
+            <ul id="saved_characters">
+                <li>The Class Name "The Epithet" from World is motivated by motivation</li>
+            </ul>
         </section>
     </main>
     <footer>

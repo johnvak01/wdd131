@@ -115,8 +115,104 @@ a:hover {
     float: right;
     width: 11rem;
     height: 11rem;
+    margin: 0.25rem;
 }
 
 .planet-card {
     overflow: auto;
+}
+/* Form formatting */
+legend{
+    font-weight: 700;
+}
+
+form select,
+form input[type="text"]{
+    background-color: var(--light-text);
+    display: block;
+    border: solid 1px var(--accent-blue); 
+    border-radius: 6px;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    width: 100%; 
+    /* max-width: 400px; */
+    appearance: none;
+}
+
+form input[type="button"], #button_save{
+    border: none;
+    color: var(--light-text);
+    background-color: var(--accent-blue);
+    border-radius: 6px;
+    padding: 0.8rem;
+    margin-top: 0.8rem;
+    width: 100%;
+    /* max-width: 25rem; */
+    box-shadow: 1px 1px 4px var(--dark-text);
+    text-shadow: 1px 1px var(--dark-text);
+}
+
+form input:required, select:invalid{
+    border-left: 1rem solid red;
+    background-color: pink;
+}
+
+form input:required:valid, select:valid{
+    border-left: 1rem solid greenyellow;
+    background-color: var(--light-text);
+}
+
+.form_section{
+    margin-bottom: 0.5rem;
+}
+.radio-list{
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+    align-items: end;
+    justify-content: center;
+}
+.radio-list label{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.25rem;
+}
+.form_title{
+    grid-column: 1 / -1;
+    font-weight: 700;
+}
+.radio-list input[type="radio"], .radio-list input[type="checkbox"]{
+    margin: 0px;
+}
+
+textarea{
+    width: 100%;
+    height: 4rem;
+}
+
+label{
+    margin-top: 0.25rem;
+}
+
+.form_result_counter{
+    text-align: center;
+}
+
+.required_asterisk{
+    color: red;
+}
+
+.saved-char{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    MARGIN-BOTTOM: 0.25rem;
+}
+
+.saved-char button{
+    width: 2rem;
+    height: 2rem;
+    justify-self: center;
+
 }
